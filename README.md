@@ -1,2 +1,2 @@
 # Statistical_Inference_Project
-Linear Regression, Anova and Logit Regression for calories of products in a McDonald's menu
+Linear regression, Anova and Logit regression for products calories in a McDonald's menu
