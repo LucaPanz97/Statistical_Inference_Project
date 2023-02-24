@@ -22,4 +22,4 @@ Luca Panzeri    *Politecnico di Milano - BSc in Ingegneria Matematica*
 
 The project was carried out during 'Inferenza Statistica' course of Ingegneria Matematica at PoliMi, 2020. 
 
-Special thanks to Prof. ssa Paganoni, under whose guidance all the material was developed.
+Special thanks to Prof.ssa Paganoni, under whose guidance all the material was developed.
