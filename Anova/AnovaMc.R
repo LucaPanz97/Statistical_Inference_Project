@@ -1,5 +1,3 @@
-setwd("C:/Users/panze/Desktop/INFERENZA STATISTICA/Dataset")
-
 library(MASS)
 library(leaps)
 library(GGally)
@@ -45,7 +43,7 @@ qqline(Calories[Category=='Coffee & Tea'])
 qqnorm(Calories[Category=='Smoothies & Shakes'],main='Smoothies & Shakes')
 qqline(Calories[Category=='Smoothies & Shakes'])
 
-# Verifichiamo l'omoschedasticit‡
+# Verifichiamo l'omoschedasticit≈ï
 
 leveneTest( Calories, Category )
 
