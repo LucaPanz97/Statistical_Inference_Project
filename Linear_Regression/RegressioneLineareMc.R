@@ -1,5 +1,3 @@
-setwd("C:/Users/panze/Desktop/INFERENZA STATISTICA/Dataset")
-
 library( car )
 library( ellipse )
 library( faraway )
@@ -32,7 +30,7 @@ X1=model.matrix(g1)
 heatmap( cor( X1 ), Rowv = NA, Colv = NA, symm = TRUE, keep.dendro = F)
 vif(g1)
 
-#inizio a togliere da p-value più alto
+#inizio a togliere da p-value piÃ¹ alto
 g2 = update( g1, . ~ . - Dietary.Fiber)
 summary(g2)
 qqnorm(g2$res)
