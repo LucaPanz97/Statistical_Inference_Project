@@ -1,5 +1,3 @@
-setwd("C:/Users/panze/Desktop/INFERENZA STATISTICA/Dataset")
-
 library(MASS)
 library(leaps)
 library(GGally)
@@ -24,7 +22,7 @@ max( Calories )#1880
 #inserisci in x il limite delle classi classi da 188 calorie
 x = c( 0, 200, 400, 600, 800,1000,1200,1400,1600,1800,2000 )
 mid = c( ( x [ 2:11 ] + x [ 1:10 ] )/2 )
-#suddivido i dati nelle classi creatw #Age per noi è calories
+#suddivido i dati nelle classi creatw #Age per noi Ã¨ calories
 GRAGE = cut( Calories, breaks = x, include.lowest = TRUE, right = FALSE ) 
 GRAGE
 
@@ -56,9 +54,7 @@ lines( Calories, mod$fitted, col = 'darkblue' )
 summary( mod )
 
 
-
 odds= exp( 200 * coef( mod ) [ 2 ] ) #al posto di 10 metti la larghezza della classe
-
 
 
 #Ic per la regressione logistica
@@ -72,11 +68,7 @@ IC.inf = exp( 200* coef( mod ) [ 2 ] - qalpha * 200* summary( mod )$coefficients
 c( IC.inf, IC.sup ) 
 
 
-
-
 #posso provare a calcolarlo cosi anche
-
-
 
 V = vcov( mod ) #matrice covarianza 
 V
@@ -100,15 +92,10 @@ lines( grid, gl$linkinv( se$fit - qnorm( 1-0.025 ) * se$se ), col = "red", lty =
 lines( grid, gl$linkinv( se$fit + qnorm( 1-0.025 ) * se$se ), col = "red", lty = 2 )
 
 
-
 #Goodness of fit
-
-
 
 mod2 = lrm( Punta ~ Calories, x = TRUE, y = TRUE ) 
 mod2 
-
-
 
 hoslem.test( mod$y, fitted( mod ), g = 10) #g deve essere maggiore di p
 #p value alto vuol dire buon fitting
