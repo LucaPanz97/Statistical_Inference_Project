@@ -2,7 +2,8 @@
 
 # Goal
 
-This project aims to analyze the calorie content of items on the McDonald's menu. 
+This project aims to analyze the calorie content of items on the McDonald's menu.
+
 To achieve this objective, we have developed three distinct statistical models:
 1. Linear Regression Model: this model was created to understand how calories in McDonald's products relate to various correlated variables. It enables us to identify the factors that significantly influence the calorie content of products.
 2. ANOVA Model: through analysis of variance, we have examined whether product categorization affects calorie intake. This allows us to assess whether significant differences exist among product categories.
